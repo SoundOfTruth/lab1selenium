@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 options = webdriver.ChromeOptions()
 ua = UserAgent()
+options.add_argument("--start-maximized")
 options.add_argument(f"user-agent={ua.opera}")
 options.add_argument("--disable-blink-features=AutomationControlled")
 s = Service("C:\\Users\\Evgenii\\PycharmProjects\\selen\\chromedriver\\chromedriver.exe")
