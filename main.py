@@ -16,13 +16,13 @@ driver = webdriver.Chrome(service=s,
 def get_info():
     try:
         driver.get(url="https://www.eldorado.ru/d/smartfony-i-gadzhety/")
-        time.sleep(3)
+        time.sleep(5)
         button_smart = driver.find_element(By.LINK_TEXT, "Смартфоны")
         button_smart.click()
-        time.sleep(2)
+        time.sleep(3)
         apple_click = driver.find_element(By.XPATH, "//*[@title='Apple']")
         apple_click.click()
-        time.sleep(2)
+        time.sleep(3)
         accept_click = driver.find_element(By.XPATH, "//*[text()='Принять']")
         accept_click.click()
         names = driver.find_elements(By.XPATH, "//*[@data-dy='title']")
